@@ -42,5 +42,12 @@ namespace GUI_Website
             newform.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            QuanLy_KhachHang newform = new QuanLy_KhachHang();
+            newform.Show();
+            this.Hide();
+        }
     }
 }
