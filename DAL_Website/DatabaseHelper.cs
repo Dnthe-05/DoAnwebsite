@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -28,13 +29,23 @@ namespace DAL_Website
         }
         public static object ExecuteScalar(string query, SqlParameter[] parameters)
         {
-            using (SqlConnection conn = DatabaseHelper.GetConnection())
-            {
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddRange(parameters);
+            using (SqlConnection conn = GetConnection())
 
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddRange(parameters);
                 conn.Open();
-                return cmd.ExecuteScalar();  
+                return cmd.ExecuteScalar(); 
+            }
+        }
+        public static DataTable ExecuteQuery(string query)
+        {
+            using (SqlConnection conn = GetConnection())
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
             }
         }
 

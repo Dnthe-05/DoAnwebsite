@@ -48,7 +48,7 @@ namespace DAL_Website
             return dt;
         }
 
-        // Phương thức lấy danh sách trạng thái
+
         public List<string> GetTrangThaiList()
         {
             List<string> trangThaiList = new List<string>();

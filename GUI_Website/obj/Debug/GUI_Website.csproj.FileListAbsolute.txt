@@ -34,3 +34,4 @@ D:\Learning about Code\C#\DoAn\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_
 D:\Learning about Code\C#\DoAn\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Webs.B8760D9C.Up2Date
 D:\Learning about Code\C#\DoAn\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.exe
 D:\Learning about Code\C#\DoAn\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.pdb
+D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QuanLy_KhachHang.resources
