@@ -62,18 +62,18 @@
             // 
             // txt_TaiKhoan
             // 
-            this.txt_TaiKhoan.Location = new System.Drawing.Point(439, 167);
+            this.txt_TaiKhoan.Location = new System.Drawing.Point(439, 170);
             this.txt_TaiKhoan.Multiline = true;
             this.txt_TaiKhoan.Name = "txt_TaiKhoan";
-            this.txt_TaiKhoan.Size = new System.Drawing.Size(207, 32);
+            this.txt_TaiKhoan.Size = new System.Drawing.Size(207, 29);
             this.txt_TaiKhoan.TabIndex = 2;
             // 
             // txt_MatKhau
             // 
-            this.txt_MatKhau.Location = new System.Drawing.Point(439, 236);
+            this.txt_MatKhau.Location = new System.Drawing.Point(439, 240);
             this.txt_MatKhau.Multiline = true;
             this.txt_MatKhau.Name = "txt_MatKhau";
-            this.txt_MatKhau.Size = new System.Drawing.Size(207, 32);
+            this.txt_MatKhau.Size = new System.Drawing.Size(207, 28);
             this.txt_MatKhau.TabIndex = 3;
             // 
             // btn_DangNhap

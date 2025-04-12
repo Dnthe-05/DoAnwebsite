@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using DAL_Website;
 namespace BLL_Website
 {
-    public class UserService
+    public class TaiKhoanBLL
     {
-        private UserDAL userDAL = new UserDAL();
+        private TaiKhoanDAL dal = new TaiKhoanDAL();
 
-        public int Login(string username, string password)
+        public string Login(string username, string password)
         {
-            return userDAL.CheckLogin(username, password);
+            return dal.Login(username, password);
         }
     }
 }

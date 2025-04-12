@@ -65,6 +65,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="QL_BaoHanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_BaoHanh.Designer.cs">
+      <DependentUpon>QL_BaoHanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_HoaDon.Designer.cs">
+      <DependentUpon>QL_HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_KhoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_KhoHang.Designer.cs">
+      <DependentUpon>QL_KhoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_KhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_KhuyenMai.Designer.cs">
+      <DependentUpon>QL_KhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_NCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_NCC.Designer.cs">
+      <DependentUpon>QL_NCC.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +112,12 @@
     </Compile>
     <Compile Include="QuanLy_NhanVien.Designer.cs">
       <DependentUpon>QuanLy_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy_SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy_SanPham.Designer.cs">
+      <DependentUpon>QuanLy_SanPham.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +138,21 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="QL_BaoHanh.resx">
+      <DependentUpon>QL_BaoHanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_HoaDon.resx">
+      <DependentUpon>QL_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_KhoHang.resx">
+      <DependentUpon>QL_KhoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_KhuyenMai.resx">
+      <DependentUpon>QL_KhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_NCC.resx">
+      <DependentUpon>QL_NCC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLy_NhanVien.resx">
       <DependentUpon>QuanLy_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy_SanPham.resx">
+      <DependentUpon>QuanLy_SanPham.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +225,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baohanh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__40991.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__351272.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__351273.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__351274.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__351275.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__adjust__351276.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

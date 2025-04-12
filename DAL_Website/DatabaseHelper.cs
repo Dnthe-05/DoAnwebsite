@@ -49,5 +49,26 @@ namespace DAL_Website
             }
         }
 
+        // Dùng cho câu query KHÔNG có tham số
+        //public static DataTable ExecuteQuery(string query)
+        //{
+        //    return ExecuteQuery(query, null); // Gọi hàm dưới với null parameters
+        //}
+
+        // Dùng cho câu query CÓ tham số
+        public static DataTable ExecuteQuery(string query, SqlParameter[] parameters)
+        {
+            using (SqlConnection conn = GetConnection())
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddRange(parameters);
+                using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    return dt;
+                }
+            }
+        }
     }
 }

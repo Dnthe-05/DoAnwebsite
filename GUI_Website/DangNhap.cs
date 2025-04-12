@@ -13,7 +13,7 @@ namespace GUI_Website
 {
     public partial class DangNhap : Form
     {
-        private UserService userService = new UserService();
+        private TaiKhoanBLL userService = new TaiKhoanBLL();
         static class Program
         {
             [STAThread]
@@ -21,7 +21,7 @@ namespace GUI_Website
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new QuanLy_KhachHang()); 
+                Application.Run(new DangNhap()); 
             }
         }
         public DangNhap()
@@ -40,7 +40,7 @@ namespace GUI_Website
             DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                Application.Exit(); // Thoát chương trình
+                Application.Exit(); 
             }
         }
 
@@ -49,16 +49,16 @@ namespace GUI_Website
             string username = txt_TaiKhoan.Text;
             string password = txt_MatKhau.Text;
 
-            int loaiTK = userService.Login(username, password);
+            string chucVu = userService.Login(username, password);
 
-            if (loaiTK == 1)
+            if (chucVu == "Admin" || chucVu == "Quản Lý")
             {
                 MessageBox.Show("Đăng nhập thành công với quyền Admin!");
                 QuanLy adminForm = new QuanLy();
                 adminForm.Show();
                 this.Hide();
             }
-            else if (loaiTK == 2)
+            else if (chucVu == "Nhân viên" || chucVu == "Thu Ngân")
             {
                 MessageBox.Show("Đăng nhập thành công với quyền Nhân viên!");
                 NhanVien nvForm = new NhanVien();
@@ -76,11 +76,11 @@ namespace GUI_Website
         {
             if (chk_ShowPassWord.Checked)
             {
-                txt_MatKhau.PasswordChar = '\0'; // Hiển thị mật khẩu khi tick vào checkbox
+                txt_MatKhau.PasswordChar = '\0'; 
             }
             else
             {
-                txt_MatKhau.PasswordChar = '*'; // Ẩn mật khẩu khi bỏ tick
+                txt_MatKhau.PasswordChar = '*'; 
             }
         }
     }

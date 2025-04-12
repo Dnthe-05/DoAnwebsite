@@ -17,6 +17,7 @@ namespace GUI_Website
     {
 
         private NhanVienBLL _nhanVienBLL;
+
         public QuanLy_NhanVien()
         {
             InitializeComponent();
@@ -84,25 +85,53 @@ namespace GUI_Website
             {
                 DataGridViewRow row = dgv_DanhSachNhanVien.Rows[e.RowIndex];
 
-                txt_Manv.Text = row.Cells["MANV"].Value.ToString();
-                txt_FullName.Text = row.Cells["HOTENNV"].Value.ToString();
-                txt_SDT.Text = row.Cells["SDT"].Value.ToString();
-                dtp_NgayVaoLam.Value = Convert.ToDateTime(row.Cells["NGAYVAOLAM"].Value);
-                txt_Luong.Text = row.Cells["LUONG"].Value.ToString();
-                txt_MatKhau.Text = row.Cells["MATKHAUNV"].Value.ToString();
-                txt_TaiKhoan.Text = row.Cells["TENTK"].Value.ToString();
+                txt_Manv.Text = row.Cells["MANV"].Value?.ToString() ?? "";
+                txt_FullName.Text = row.Cells["HOTENNV"].Value?.ToString() ?? "";
+                txt_SDT.Text = row.Cells["SDT"].Value?.ToString() ?? "";
+                txt_Luong.Text = row.Cells["LUONG"].Value?.ToString() ?? "";
+                txt_MatKhau.Text = row.Cells["MATKHAUNV"].Value?.ToString() ?? "";
+                txt_TaiKhoan.Text = row.Cells["TENTK"].Value?.ToString() ?? "";
 
-                string trangThai = row.Cells["TRANGTHAI"].Value?.ToString() ?? string.Empty;
-                string chucVu = row.Cells["ROLE"].Value?.ToString() ?? string.Empty;
+                // Xử lý ngày vào làm an toàn
+                object ngayVaoLamVal = row.Cells["NGAYVAOLAM"].Value;
+                if (ngayVaoLamVal != null && ngayVaoLamVal != DBNull.Value)
+                {
+                    DateTime ngayVaoLam;
+                    if (DateTime.TryParse(ngayVaoLamVal.ToString(), out ngayVaoLam))
+                    {
+                        dtp_NgayVaoLam.Value = ngayVaoLam;
+                    }
+                    else
+                    {
+                        // Nếu sai định dạng thì gán mặc định
+                        dtp_NgayVaoLam.Value = DateTime.Now;
+                    }
+                }
+                else
+                {
+                    dtp_NgayVaoLam.Value = DateTime.Now;
+                }
 
+                // Xử lý comboBox trạng thái
+                string trangThai = row.Cells["TRANGTHAI"].Value?.ToString() ?? "";
                 if (!string.IsNullOrEmpty(trangThai) && cbx_TrangThai.Items.Contains(trangThai))
                 {
                     cbx_TrangThai.SelectedItem = trangThai;
                 }
+                else
+                {
+                    cbx_TrangThai.SelectedIndex = -1;
+                }
 
+                // Xử lý comboBox chức vụ
+                string chucVu = row.Cells["ROLE"].Value?.ToString() ?? "";
                 if (!string.IsNullOrEmpty(chucVu) && cbx_ChucVu.Items.Contains(chucVu))
                 {
                     cbx_ChucVu.SelectedItem = chucVu;
+                }
+                else
+                {
+                    cbx_ChucVu.SelectedIndex = -1;
                 }
             }
         }

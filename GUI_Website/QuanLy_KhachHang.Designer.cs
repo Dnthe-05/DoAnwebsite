@@ -32,6 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLy_KhachHang));
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_DanhSach_KH = new System.Windows.Forms.DataGridView();
+            this.col_MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ROLE = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbx_DoThanThiet = new System.Windows.Forms.ComboBox();
             this.txt_TrangThai = new System.Windows.Forms.TextBox();
@@ -61,14 +69,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.ccbx_TimKiemKH = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.col_MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ROLE = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSach_KH)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -110,6 +110,68 @@
             this.dgv_DanhSach_KH.Size = new System.Drawing.Size(936, 564);
             this.dgv_DanhSach_KH.TabIndex = 1;
             this.dgv_DanhSach_KH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DanhSach_KH_CellClick);
+            // 
+            // col_MaKH
+            // 
+            this.col_MaKH.DataPropertyName = "MAKH";
+            this.col_MaKH.HeaderText = "Mã KH";
+            this.col_MaKH.MinimumWidth = 6;
+            this.col_MaKH.Name = "col_MaKH";
+            this.col_MaKH.ReadOnly = true;
+            // 
+            // col_TenKH
+            // 
+            this.col_TenKH.DataPropertyName = "TENKH";
+            this.col_TenKH.HeaderText = "Tên Khách Hàng";
+            this.col_TenKH.MinimumWidth = 6;
+            this.col_TenKH.Name = "col_TenKH";
+            this.col_TenKH.ReadOnly = true;
+            // 
+            // col_Gender
+            // 
+            this.col_Gender.DataPropertyName = "GIOITINH";
+            this.col_Gender.HeaderText = "Giới Tính";
+            this.col_Gender.MinimumWidth = 6;
+            this.col_Gender.Name = "col_Gender";
+            this.col_Gender.ReadOnly = true;
+            // 
+            // col_SDT
+            // 
+            this.col_SDT.DataPropertyName = "SDT";
+            this.col_SDT.HeaderText = "SĐT";
+            this.col_SDT.MinimumWidth = 6;
+            this.col_SDT.Name = "col_SDT";
+            this.col_SDT.ReadOnly = true;
+            // 
+            // col_DiaChi
+            // 
+            this.col_DiaChi.DataPropertyName = "DIACHI";
+            this.col_DiaChi.HeaderText = "Địa chỉ";
+            this.col_DiaChi.MinimumWidth = 6;
+            this.col_DiaChi.Name = "col_DiaChi";
+            this.col_DiaChi.ReadOnly = true;
+            // 
+            // col_MatKhau
+            // 
+            this.col_MatKhau.DataPropertyName = "MATKHAUKH";
+            this.col_MatKhau.HeaderText = "Mật Khẩu";
+            this.col_MatKhau.MinimumWidth = 6;
+            this.col_MatKhau.Name = "col_MatKhau";
+            this.col_MatKhau.ReadOnly = true;
+            // 
+            // col_Status
+            // 
+            this.col_Status.DataPropertyName = "TRANGTHAI";
+            this.col_Status.HeaderText = "Trạng Thái";
+            this.col_Status.MinimumWidth = 6;
+            this.col_Status.Name = "col_Status";
+            // 
+            // ROLE
+            // 
+            this.ROLE.DataPropertyName = "ROLE";
+            this.ROLE.HeaderText = "Độ Thân Thiết";
+            this.ROLE.MinimumWidth = 6;
+            this.ROLE.Name = "ROLE";
             // 
             // groupBox1
             // 
@@ -303,13 +365,14 @@
             this.btn_QuayLai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_QuayLai.ImageKey = "logout.png";
             this.btn_QuayLai.ImageList = this.imageList1;
-            this.btn_QuayLai.Location = new System.Drawing.Point(1133, 22);
+            this.btn_QuayLai.Location = new System.Drawing.Point(1112, 22);
             this.btn_QuayLai.Name = "btn_QuayLai";
-            this.btn_QuayLai.Size = new System.Drawing.Size(116, 50);
+            this.btn_QuayLai.Size = new System.Drawing.Size(137, 50);
             this.btn_QuayLai.TabIndex = 3;
             this.btn_QuayLai.Text = "Quay Lại";
             this.btn_QuayLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_QuayLai.UseVisualStyleBackColor = true;
+            this.btn_QuayLai.Click += new System.EventHandler(this.btn_QuayLai_Click);
             // 
             // imageList1
             // 
@@ -332,11 +395,12 @@
             this.btn_Thoat.ImageList = this.imageList1;
             this.btn_Thoat.Location = new System.Drawing.Point(1255, 22);
             this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(95, 50);
+            this.btn_Thoat.Size = new System.Drawing.Size(101, 50);
             this.btn_Thoat.TabIndex = 4;
             this.btn_Thoat.Text = "Thoát";
             this.btn_Thoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Thoat.UseVisualStyleBackColor = true;
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
             // groupBox2
             // 
@@ -367,7 +431,7 @@
             this.btn_SuaKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_SuaKH.ImageIndex = 3;
             this.btn_SuaKH.ImageList = this.imageList1;
-            this.btn_SuaKH.Location = new System.Drawing.Point(1231, 73);
+            this.btn_SuaKH.Location = new System.Drawing.Point(1218, 17);
             this.btn_SuaKH.Name = "btn_SuaKH";
             this.btn_SuaKH.Size = new System.Drawing.Size(96, 42);
             this.btn_SuaKH.TabIndex = 22;
@@ -385,7 +449,7 @@
             this.btn_XoaKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_XoaKH.ImageIndex = 2;
             this.btn_XoaKH.ImageList = this.imageList1;
-            this.btn_XoaKH.Location = new System.Drawing.Point(1127, 73);
+            this.btn_XoaKH.Location = new System.Drawing.Point(1109, 17);
             this.btn_XoaKH.Name = "btn_XoaKH";
             this.btn_XoaKH.Size = new System.Drawing.Size(98, 42);
             this.btn_XoaKH.TabIndex = 21;
@@ -405,9 +469,9 @@
             this.btn_ThemKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ThemKH.ImageKey = "add.png";
             this.btn_ThemKH.ImageList = this.imageList1;
-            this.btn_ThemKH.Location = new System.Drawing.Point(1020, 73);
+            this.btn_ThemKH.Location = new System.Drawing.Point(981, 17);
             this.btn_ThemKH.Name = "btn_ThemKH";
-            this.btn_ThemKH.Size = new System.Drawing.Size(101, 42);
+            this.btn_ThemKH.Size = new System.Drawing.Size(111, 42);
             this.btn_ThemKH.TabIndex = 20;
             this.btn_ThemKH.Text = "Thêm";
             this.btn_ThemKH.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -416,7 +480,7 @@
             // 
             // txt_NhapThongTin
             // 
-            this.txt_NhapThongTin.Location = new System.Drawing.Point(190, 84);
+            this.txt_NhapThongTin.Location = new System.Drawing.Point(562, 32);
             this.txt_NhapThongTin.Multiline = true;
             this.txt_NhapThongTin.Name = "txt_NhapThongTin";
             this.txt_NhapThongTin.Size = new System.Drawing.Size(168, 31);
@@ -426,7 +490,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(37, 87);
+            this.label11.Location = new System.Drawing.Point(378, 40);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(128, 19);
             this.label11.TabIndex = 19;
@@ -434,6 +498,8 @@
             // 
             // ccbx_TimKiemKH
             // 
+            this.ccbx_TimKiemKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ccbx_TimKiemKH.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ccbx_TimKiemKH.FormattingEnabled = true;
             this.ccbx_TimKiemKH.Location = new System.Drawing.Point(190, 32);
             this.ccbx_TimKiemKH.Name = "ccbx_TimKiemKH";
@@ -448,68 +514,6 @@
             this.label10.Size = new System.Drawing.Size(122, 19);
             this.label10.TabIndex = 17;
             this.label10.Text = "Tìm kiếm theo:";
-            // 
-            // col_MaKH
-            // 
-            this.col_MaKH.DataPropertyName = "MAKH";
-            this.col_MaKH.HeaderText = "Mã KH";
-            this.col_MaKH.MinimumWidth = 6;
-            this.col_MaKH.Name = "col_MaKH";
-            this.col_MaKH.ReadOnly = true;
-            // 
-            // col_TenKH
-            // 
-            this.col_TenKH.DataPropertyName = "TENKH";
-            this.col_TenKH.HeaderText = "Tên Khách Hàng";
-            this.col_TenKH.MinimumWidth = 6;
-            this.col_TenKH.Name = "col_TenKH";
-            this.col_TenKH.ReadOnly = true;
-            // 
-            // col_Gender
-            // 
-            this.col_Gender.DataPropertyName = "GIOITINH";
-            this.col_Gender.HeaderText = "Giới Tính";
-            this.col_Gender.MinimumWidth = 6;
-            this.col_Gender.Name = "col_Gender";
-            this.col_Gender.ReadOnly = true;
-            // 
-            // col_SDT
-            // 
-            this.col_SDT.DataPropertyName = "SDT";
-            this.col_SDT.HeaderText = "SĐT";
-            this.col_SDT.MinimumWidth = 6;
-            this.col_SDT.Name = "col_SDT";
-            this.col_SDT.ReadOnly = true;
-            // 
-            // col_DiaChi
-            // 
-            this.col_DiaChi.DataPropertyName = "DIACHI";
-            this.col_DiaChi.HeaderText = "Địa chỉ";
-            this.col_DiaChi.MinimumWidth = 6;
-            this.col_DiaChi.Name = "col_DiaChi";
-            this.col_DiaChi.ReadOnly = true;
-            // 
-            // col_MatKhau
-            // 
-            this.col_MatKhau.DataPropertyName = "MATKHAUKH";
-            this.col_MatKhau.HeaderText = "Mật Khẩu";
-            this.col_MatKhau.MinimumWidth = 6;
-            this.col_MatKhau.Name = "col_MatKhau";
-            this.col_MatKhau.ReadOnly = true;
-            // 
-            // col_Status
-            // 
-            this.col_Status.DataPropertyName = "TRANGTHAI";
-            this.col_Status.HeaderText = "Trạng Thái";
-            this.col_Status.MinimumWidth = 6;
-            this.col_Status.Name = "col_Status";
-            // 
-            // ROLE
-            // 
-            this.ROLE.DataPropertyName = "ROLE";
-            this.ROLE.HeaderText = "Độ Thân Thiết";
-            this.ROLE.MinimumWidth = 6;
-            this.ROLE.Name = "ROLE";
             // 
             // QuanLy_KhachHang
             // 
@@ -526,8 +530,10 @@
             this.Controls.Add(this.dgv_DanhSach_KH);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
             this.Name = "QuanLy_KhachHang";
             this.Text = "QuanLy_KhachHang";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QuanLy_KhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSach_KH)).EndInit();
             this.groupBox1.ResumeLayout(false);

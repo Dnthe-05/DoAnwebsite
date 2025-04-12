@@ -16,10 +16,11 @@ namespace GUI_Website
         {
             InitializeComponent();
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
-
+            QL_KhoHang newform = new QL_KhoHang();
+            newform.Show();
+            this.Hide();
         }
 
         private void btn_Thoat_Click(object sender, EventArgs e)
@@ -31,7 +32,7 @@ namespace GUI_Website
                 DangNhap loginForm = new DangNhap();
                 loginForm.Show();
 
-                this.Close(); // Đóng AdminForm
+                this.Close(); 
 
             }
         }
@@ -46,6 +47,51 @@ namespace GUI_Website
         private void button2_Click(object sender, EventArgs e)
         {
             QuanLy_KhachHang newform = new QuanLy_KhachHang();
+            newform.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            QuanLy_SanPham newform = new QuanLy_SanPham();
+            newform.Show();
+            this.Hide();
+        }
+
+        private void QuanLy_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            QL_HoaDon newform = new QL_HoaDon();
+            newform.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            QL_NCC newform = new QL_NCC();
+            newform .Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            QL_BaoHanh newform = new QL_BaoHanh(); 
+            newform.Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            QL_KhuyenMai newform = new QL_KhuyenMai();  
             newform.Show();
             this.Hide();
         }

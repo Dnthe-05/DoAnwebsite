@@ -464,7 +464,7 @@
             // 
             // txt_NhapThongTin
             // 
-            this.txt_NhapThongTin.Location = new System.Drawing.Point(250, 84);
+            this.txt_NhapThongTin.Location = new System.Drawing.Point(615, 28);
             this.txt_NhapThongTin.Name = "txt_NhapThongTin";
             this.txt_NhapThongTin.Size = new System.Drawing.Size(173, 27);
             this.txt_NhapThongTin.TabIndex = 6;
@@ -472,7 +472,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(28, 87);
+            this.label13.Location = new System.Drawing.Point(396, 36);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(195, 19);
             this.label13.TabIndex = 5;
@@ -484,13 +484,14 @@
             "Mã Nhân Viên",
             "Họ và Tên",
             "Chức vụ "});
+            this.cbx_TimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_TimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbx_TimKiem.FormattingEnabled = true;
             this.cbx_TimKiem.Items.AddRange(new object[] {
             "Mã Nhân Viên",
             "Họ và Tên",
             "Chức vụ"});
-            this.cbx_TimKiem.Location = new System.Drawing.Point(250, 41);
+            this.cbx_TimKiem.Location = new System.Drawing.Point(204, 28);
             this.cbx_TimKiem.Name = "cbx_TimKiem";
             this.cbx_TimKiem.Size = new System.Drawing.Size(173, 27);
             this.cbx_TimKiem.TabIndex = 4;
@@ -499,7 +500,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(24, 49);
+            this.label12.Location = new System.Drawing.Point(28, 36);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(122, 19);
             this.label12.TabIndex = 3;
@@ -511,7 +512,7 @@
             this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Sua.ImageIndex = 2;
             this.btn_Sua.ImageList = this.imageList1;
-            this.btn_Sua.Location = new System.Drawing.Point(753, 69);
+            this.btn_Sua.Location = new System.Drawing.Point(780, 41);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(88, 53);
             this.btn_Sua.TabIndex = 2;
@@ -536,7 +537,7 @@
             this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Xoa.ImageIndex = 1;
             this.btn_Xoa.ImageList = this.imageList1;
-            this.btn_Xoa.Location = new System.Drawing.Point(858, 69);
+            this.btn_Xoa.Location = new System.Drawing.Point(885, 41);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(89, 53);
             this.btn_Xoa.TabIndex = 1;
@@ -551,7 +552,7 @@
             this.btn_Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Them.ImageIndex = 0;
             this.btn_Them.ImageList = this.imageList1;
-            this.btn_Them.Location = new System.Drawing.Point(646, 69);
+            this.btn_Them.Location = new System.Drawing.Point(672, 41);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(92, 53);
             this.btn_Them.TabIndex = 0;
@@ -610,8 +611,10 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
             this.Name = "QuanLy_NhanVien";
             this.Text = "QuanLy_NhanVien";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QuanLy_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachNhanVien)).EndInit();
             this.groupBox1.ResumeLayout(false);

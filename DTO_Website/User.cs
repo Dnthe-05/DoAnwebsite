@@ -10,6 +10,6 @@ namespace DTO_Website
     {
         public string TenTK { get; set; }
         public string MatKhau { get; set; }
-        public int LoaiTK { get; set; }  // 1 = Admin, 2 = Nhân viên
+        public int LoaiTK { get; set; }  
     }
 }

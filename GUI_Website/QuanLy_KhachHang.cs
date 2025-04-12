@@ -16,93 +16,93 @@ namespace GUI_Website
         }
 
         private void QuanLy_KhachHang_Load(object sender, EventArgs e)
-        {
-            KhachHangBLL bll = new KhachHangBLL();
-            var danhSachKhachHang = bll.LayDanhSachKhachHang();
-            LoadDanhSachKhachHang();
+            {
+                KhachHangBLL bll = new KhachHangBLL();
+                var danhSachKhachHang = bll.LayDanhSachKhachHang();
+                LoadDanhSachKhachHang();
 
-            DataTable table = ConvertListToDataTable(danhSachKhachHang);
+                DataTable table = ConvertListToDataTable(danhSachKhachHang);
 
   
-            if (table.Columns.Contains("ROLE"))
-                table.Columns.Remove("ROLE");
+                if (table.Columns.Contains("ROLE"))
+                    table.Columns.Remove("ROLE");
 
 
-            DataColumn roleCol = new DataColumn("ROLE", typeof(string));
-            table.Columns.Add(roleCol);
+                DataColumn roleCol = new DataColumn("ROLE", typeof(string));
+                table.Columns.Add(roleCol);
 
 
-            for (int i = 0; i < table.Rows.Count; i++)
-            {
-                string roleValue = danhSachKhachHang[i].ROLE?.Trim().ToLower();
-                if (roleValue == "thân thiết") roleValue = "Thân thiết";
-                else roleValue = "Bình thường"; 
-
-                table.Rows[i]["ROLE"] = roleValue;
-            }
-
-            dgv_DanhSach_KH.AutoGenerateColumns = false;
-            dgv_DanhSach_KH.DataSource = table;
-
-  
-            foreach (DataGridViewColumn col in dgv_DanhSach_KH.Columns)
-            {
-                if (col.Name == "ROLE")
+                for (int i = 0; i < table.Rows.Count; i++)
                 {
-                    dgv_DanhSach_KH.Columns.Remove(col);
-                    break;
+                    string roleValue = danhSachKhachHang[i].ROLE?.Trim().ToLower();
+                    if (roleValue == "thân thiết") roleValue = "Thân thiết";
+                    else roleValue = "Bình thường"; 
+
+                    table.Rows[i]["ROLE"] = roleValue;
                 }
+
+                dgv_DanhSach_KH.AutoGenerateColumns = false;
+                dgv_DanhSach_KH.DataSource = table;
+
+  
+                foreach (DataGridViewColumn col in dgv_DanhSach_KH.Columns)
+                {
+                    if (col.Name == "ROLE")
+                    {
+                        dgv_DanhSach_KH.Columns.Remove(col);
+                        break;
+                    }
+                }
+
+
+                DataGridViewComboBoxColumn combo = new DataGridViewComboBoxColumn();
+                combo.Name = "col_Role";
+                combo.HeaderText = "Độ Thân Thiết";
+                combo.DataPropertyName = "ROLE"; 
+                combo.Items.Add("Thân thiết");
+                combo.Items.Add("Bình thường");
+
+                dgv_DanhSach_KH.Columns.Add(combo);
+
+
+                dgv_DanhSach_KH.DataError += (s, args) => { args.ThrowException = false; };
+
+                cbx_DoThanThiet.Items.Clear();
+                cbx_DoThanThiet.Items.Add("Thân thiết");
+                cbx_DoThanThiet.Items.Add("Bình thường");
+
+
+                // ComboBox chọn tiêu chí tìm
+                ccbx_TimKiemKH.Items.Add("Mã KH");
+                ccbx_TimKiemKH.Items.Add("Tên KH");
+                ccbx_TimKiemKH.SelectedIndex = 0; // chọn mặc định
+
+                // Gắn sự kiện TextChanged cho TextBox
+                txt_NhapThongTin.TextChanged += txt_NhapThongTin_TextChanged;
+
+
             }
 
-
-            DataGridViewComboBoxColumn combo = new DataGridViewComboBoxColumn();
-            combo.Name = "col_Role";
-            combo.HeaderText = "Độ Thân Thiết";
-            combo.DataPropertyName = "ROLE"; 
-            combo.Items.Add("Thân thiết");
-            combo.Items.Add("Bình thường");
-
-            dgv_DanhSach_KH.Columns.Add(combo);
-
-
-            dgv_DanhSach_KH.DataError += (s, args) => { args.ThrowException = false; };
-
-            cbx_DoThanThiet.Items.Clear();
-            cbx_DoThanThiet.Items.Add("Thân thiết");
-            cbx_DoThanThiet.Items.Add("Bình thường");
-
-
-            // ComboBox chọn tiêu chí tìm
-            ccbx_TimKiemKH.Items.Add("Mã KH");
-            ccbx_TimKiemKH.Items.Add("Tên KH");
-            ccbx_TimKiemKH.SelectedIndex = 0; // chọn mặc định
-
-            // Gắn sự kiện TextChanged cho TextBox
-            txt_NhapThongTin.TextChanged += txt_NhapThongTin_TextChanged;
-
-
-        }
-
-        private DataTable ConvertListToDataTable(List<QuanLy_KhachHangDTO> list)
-        {
-            var table = new DataTable();
-
-            table.Columns.Add("MaKH");
-            table.Columns.Add("TenKH");
-            table.Columns.Add("GioiTinh");
-            table.Columns.Add("Sdt");
-            table.Columns.Add("DiaChi");
-            table.Columns.Add("MatKhaukh");
-            table.Columns.Add("TRANGTHAI");
-            table.Columns.Add("ROLE");
-
-            foreach (var item in list)
+            private DataTable ConvertListToDataTable(List<QuanLy_KhachHangDTO> list)
             {
-                table.Rows.Add(item.MaKH, item.TenKH, item.GioiTinh, item.Sdt, item.DiaChi, item.MatKhaukh,item.TRANGTHAI ,item.ROLE);
-            }
+                var table = new DataTable();
 
-            return table;
-        }
+                table.Columns.Add("MaKH");
+                table.Columns.Add("TenKH");
+                table.Columns.Add("GioiTinh");
+                table.Columns.Add("Sdt");
+                table.Columns.Add("DiaChi");
+                table.Columns.Add("MatKhaukh");
+                table.Columns.Add("TRANGTHAI");
+                table.Columns.Add("ROLE");
+
+                foreach (var item in list)
+                {
+                    table.Rows.Add(item.MaKH, item.TenKH, item.GioiTinh, item.Sdt, item.DiaChi, item.MatKhaukh,item.TRANGTHAI ,item.ROLE);
+                }
+
+                return table;
+            }
 
         private void dgv_DanhSach_KH_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -293,7 +293,7 @@ namespace GUI_Website
             string tieuChi = ccbx_TimKiemKH.SelectedItem.ToString();
 
             KhachHangBLL bll = new KhachHangBLL();
-            var danhSach = bll.LayDanhSachKhachHang(); // lấy full
+            var danhSach = bll.LayDanhSachKhachHang(); 
 
             List<QuanLy_KhachHangDTO> ketQua = new List<QuanLy_KhachHangDTO>();
 
@@ -307,6 +307,30 @@ namespace GUI_Website
             }
 
             dgv_DanhSach_KH.DataSource = ConvertListToDataTable(ketQua);
+        }
+
+        private void btn_QuayLai_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show( "Bạn có chắc chắn muốn quay lại trang Quản lý?","Xác nhận",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+                this.Close();
+
+                QuanLy formQuanLy = new QuanLy();
+                formQuanLy.Show();
+            }
+        }
+
+        private void btn_Thoat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

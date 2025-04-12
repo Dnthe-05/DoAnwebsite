@@ -118,26 +118,77 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="freepik__adjust__351272" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freepik__adjust__351272.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="freepik__adjust__351271" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freepik__adjust__351271.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="freepik__adjust__40991" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freepik__adjust__40991.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="509" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\509.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="109006991" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\109006991.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="26127651" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\26127651.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="back2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="10900699" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\10900699.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="freepik__adjust__64523" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freepik__adjust__64523.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="36077" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\36077.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="26127651" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\26127651.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="log-out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\log-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baohanh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baohanh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background_Product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background_Product.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="freepik__adjust__351274" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freepik__adjust__351274.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="freepik__adjust__351275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freepik__adjust__351275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2612765" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2612765.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="freepik__adjust__35127" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\freepik__adjust__35127.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10900699" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10900699.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="v960-ning-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v960-ning-05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="freepik__adjust__351273" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freepik__adjust__351273.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="25895" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\25895.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6210016" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6210016.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,37 +196,13 @@
   <data name="2868886" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2868886.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="freepik__adjust__64523" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\freepik__adjust__64523.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2612765" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2612765.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="25895" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\25895.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="36077" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\36077.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5091" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5091.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="freepik__adjust__351271" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\freepik__adjust__351271.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="109006991" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\109006991.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="v960-ning-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\v960-ning-05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="log-out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\log-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="freepik__adjust__351276" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freepik__adjust__351276.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

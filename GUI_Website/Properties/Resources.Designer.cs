@@ -203,6 +203,26 @@ namespace GUI_Website.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background_Product {
+            get {
+                object obj = ResourceManager.GetObject("Background_Product", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baohanh {
+            get {
+                object obj = ResourceManager.GetObject("baohanh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap freepik__adjust__35127 {
             get {
                 object obj = ResourceManager.GetObject("freepik__adjust__35127", resourceCulture);
@@ -216,6 +236,66 @@ namespace GUI_Website.Properties {
         internal static System.Drawing.Bitmap freepik__adjust__351271 {
             get {
                 object obj = ResourceManager.GetObject("freepik__adjust__351271", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freepik__adjust__351272 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__adjust__351272", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freepik__adjust__351273 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__adjust__351273", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freepik__adjust__351274 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__adjust__351274", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freepik__adjust__351275 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__adjust__351275", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freepik__adjust__351276 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__adjust__351276", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freepik__adjust__40991 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__adjust__40991", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +326,16 @@ namespace GUI_Website.Properties {
         internal static System.Drawing.Bitmap Login {
             get {
                 object obj = ResourceManager.GetObject("Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sale {
+            get {
+                object obj = ResourceManager.GetObject("sale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
