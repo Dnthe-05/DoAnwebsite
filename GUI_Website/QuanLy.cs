@@ -18,7 +18,7 @@ namespace GUI_Website
         }
         private void button6_Click(object sender, EventArgs e)
         {
-            QL_KhoHang newform = new QL_KhoHang();
+            QL_NhapHang newform = new QL_NhapHang();
             newform.Show();
             this.Hide();
         }

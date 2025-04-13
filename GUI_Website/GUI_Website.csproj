@@ -77,11 +77,11 @@
     <Compile Include="QL_HoaDon.Designer.cs">
       <DependentUpon>QL_HoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="QL_KhoHang.cs">
+    <Compile Include="QL_NhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QL_KhoHang.Designer.cs">
-      <DependentUpon>QL_KhoHang.cs</DependentUpon>
+    <Compile Include="QL_NhapHang.Designer.cs">
+      <DependentUpon>QL_NhapHang.cs</DependentUpon>
     </Compile>
     <Compile Include="QL_KhuyenMai.cs">
       <SubType>Form</SubType>
@@ -144,8 +144,8 @@
     <EmbeddedResource Include="QL_HoaDon.resx">
       <DependentUpon>QL_HoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QL_KhoHang.resx">
-      <DependentUpon>QL_KhoHang.cs</DependentUpon>
+    <EmbeddedResource Include="QL_NhapHang.resx">
+      <DependentUpon>QL_NhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QL_KhuyenMai.resx">
       <DependentUpon>QL_KhuyenMai.cs</DependentUpon>

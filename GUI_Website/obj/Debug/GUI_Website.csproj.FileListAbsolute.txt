@@ -38,6 +38,6 @@ D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Websi
 D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QuanLy_SanPham.resources
 D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QL_HoaDon.resources
 D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QL_NCC.resources
-D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QL_KhoHang.resources
 D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QL_BaoHanh.resources
 D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QL_KhuyenMai.resources
+D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QL_NhapHang.resources

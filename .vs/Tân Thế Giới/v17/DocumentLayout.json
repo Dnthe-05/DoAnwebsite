@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\gui_website\\quanly_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\quanly_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4F3D9B0-AEF2-4407-82C3-61480D9CB67E}|BLL_Website\\BLL_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\bll_website\\ql_hoadonbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F3D9B0-AEF2-4407-82C3-61480D9CB67E}|BLL_Website\\BLL_Website.csproj|solutionrelative:bll_website\\ql_hoadonbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\gui_website\\quanly_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\quanly_sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F654B401-C550-4AA7-A6CA-C1ADFA3DBEE7}|DAL_Website\\DAL_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\dal_website\\ql_hoadondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F654B401-C550-4AA7-A6CA-C1ADFA3DBEE7}|DAL_Website\\DAL_Website.csproj|solutionrelative:dal_website\\ql_hoadondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\gui_website\\ql_hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\ql_hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\gui_website\\ql_nhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\ql_nhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\gui_website\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4F3D9B0-AEF2-4407-82C3-61480D9CB67E}|BLL_Website\\BLL_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\bll_website\\ql_nhaphangbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4F3D9B0-AEF2-4407-82C3-61480D9CB67E}|BLL_Website\\BLL_Website.csproj|solutionrelative:bll_website\\ql_nhaphangbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\gui_website\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F654B401-C550-4AA7-A6CA-C1ADFA3DBEE7}|DAL_Website\\DAL_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\dal_website\\ql_nhaphangdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F654B401-C550-4AA7-A6CA-C1ADFA3DBEE7}|DAL_Website\\DAL_Website.csproj|solutionrelative:dal_website\\ql_nhaphangdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\gui_website\\quanly_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\quanly_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\gui_website\\quanly_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\quanly_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{01C9A829-6A44-4B19-8DDC-48D141F5F599}|DTO_Website\\DTO_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\dto_website\\ql_nhaphangdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01C9A829-6A44-4B19-8DDC-48D141F5F599}|DTO_Website\\DTO_Website.csproj|solutionrelative:dto_website\\ql_nhaphangdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,95 +60,85 @@
         },
         {
           "DockedWidth": 1312,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QuanLy_KhachHang.cs [Design]",
-              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy_KhachHang.cs",
-              "RelativeDocumentMoniker": "GUI_Website\\QuanLy_KhachHang.cs",
-              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy_KhachHang.cs [Design]",
-              "RelativeToolTip": "GUI_Website\\QuanLy_KhachHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:45:40.737Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "QuanLy_SanPham.cs",
-              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy_SanPham.cs",
-              "RelativeDocumentMoniker": "GUI_Website\\QuanLy_SanPham.cs",
-              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy_SanPham.cs",
-              "RelativeToolTip": "GUI_Website\\QuanLy_SanPham.cs",
-              "ViewState": "AQIAAHIBAAAAAAAAAAAIwIIBAAAAAAAA",
+              "Title": "QL_HoaDonBLL.cs",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\BLL_Website\\QL_HoaDonBLL.cs",
+              "RelativeDocumentMoniker": "BLL_Website\\QL_HoaDonBLL.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\BLL_Website\\QL_HoaDonBLL.cs",
+              "RelativeToolTip": "BLL_Website\\QL_HoaDonBLL.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAIwBMAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:45:26.058Z",
+              "WhenOpened": "2025-04-13T09:54:20.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "QuanLy_SanPham.cs [Design]",
-              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy_SanPham.cs",
-              "RelativeDocumentMoniker": "GUI_Website\\QuanLy_SanPham.cs",
-              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy_SanPham.cs [Design]",
-              "RelativeToolTip": "GUI_Website\\QuanLy_SanPham.cs [Design]",
+              "Title": "QL_HoaDonDAL.cs",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\DAL_Website\\QL_HoaDonDAL.cs",
+              "RelativeDocumentMoniker": "DAL_Website\\QL_HoaDonDAL.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\DAL_Website\\QL_HoaDonDAL.cs",
+              "RelativeToolTip": "DAL_Website\\QL_HoaDonDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:45:16.288Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "QuanLy_NhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy_NhanVien.cs",
-              "RelativeDocumentMoniker": "GUI_Website\\QuanLy_NhanVien.cs",
-              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy_NhanVien.cs [Design]",
-              "RelativeToolTip": "GUI_Website\\QuanLy_NhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:31:25.018Z"
+              "WhenOpened": "2025-04-13T09:54:15.449Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "QL_HoaDon.cs [Design]",
-              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_HoaDon.cs",
-              "RelativeDocumentMoniker": "GUI_Website\\QL_HoaDon.cs",
-              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_HoaDon.cs [Design]",
-              "RelativeToolTip": "GUI_Website\\QL_HoaDon.cs [Design]",
+              "Title": "QL_NhapHang.cs",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_NhapHang.cs",
+              "RelativeDocumentMoniker": "GUI_Website\\QL_NhapHang.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_NhapHang.cs",
+              "RelativeToolTip": "GUI_Website\\QL_NhapHang.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAmwHAAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:30:17.496Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-13T09:04:16.791Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DangNhap.cs",
-              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\DangNhap.cs",
-              "RelativeDocumentMoniker": "GUI_Website\\DangNhap.cs",
-              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\DangNhap.cs",
-              "RelativeToolTip": "GUI_Website\\DangNhap.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAywDsAAAANAAAA",
+              "Title": "QL_NhapHangBLL.cs",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\BLL_Website\\QL_NhapHangBLL.cs",
+              "RelativeDocumentMoniker": "BLL_Website\\QL_NhapHangBLL.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\BLL_Website\\QL_NhapHangBLL.cs",
+              "RelativeToolTip": "BLL_Website\\QL_NhapHangBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T10:58:11.358Z",
+              "WhenOpened": "2025-04-13T09:03:49.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DangNhap.cs [Design]",
-              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\DangNhap.cs",
-              "RelativeDocumentMoniker": "GUI_Website\\DangNhap.cs",
-              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\DangNhap.cs [Design]",
-              "RelativeToolTip": "GUI_Website\\DangNhap.cs [Design]",
+              "Title": "QL_NhapHangDAL.cs",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\DAL_Website\\QL_NhapHangDAL.cs",
+              "RelativeDocumentMoniker": "DAL_Website\\QL_NhapHangDAL.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\DAL_Website\\QL_NhapHangDAL.cs",
+              "RelativeToolTip": "DAL_Website\\QL_NhapHangDAL.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAADwvzEAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T10:58:05.354Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-13T09:03:10.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QL_NhapHangDTO.cs",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\DTO_Website\\QL_NhapHangDTO.cs",
+              "RelativeDocumentMoniker": "DTO_Website\\QL_NhapHangDTO.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\DTO_Website\\QL_NhapHangDTO.cs",
+              "RelativeToolTip": "DTO_Website\\QL_NhapHangDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T08:58:47.541Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -45,6 +45,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QL_HoaDonBLL.cs" />
     <Compile Include="QL_KhachHangBLL.cs" />
+    <Compile Include="QL_NhaCungCapBLL.cs" />
+    <Compile Include="QL_NhapHangBLL.cs" />
     <Compile Include="QL_SanPhamBLL.cs" />
     <Compile Include="TaiKhoanBLL.cs" />
   </ItemGroup>
