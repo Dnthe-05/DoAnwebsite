@@ -21,7 +21,7 @@ namespace GUI_Website
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new QL_NhapHang()); 
+                Application.Run(new QL_KhuyenMai()); 
             }
         }
         public DangNhap()

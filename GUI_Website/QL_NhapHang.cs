@@ -56,7 +56,7 @@ namespace GUI_Website
         {
             try
             {
-                // Kiểm tra xem các điều khiển có hợp lệ không (đảm bảo không để trống)
+                
                 if (string.IsNullOrEmpty(txt_MaHang.Text) || string.IsNullOrEmpty(txt_MaNCC.Text) ||
                     string.IsNullOrEmpty(txt_MaSP.Text) || string.IsNullOrEmpty(txt_SoLuong.Text) ||
                     string.IsNullOrEmpty(txt_GiaNhap.Text))
@@ -65,7 +65,6 @@ namespace GUI_Website
                     return;
                 }
 
-                // Chuyển đổi các giá trị nhập vào
                 QL_NhapHangDTO nhapHang = new QL_NhapHangDTO
                 {
                     MaNH = int.Parse(txt_MaHang.Text),  
@@ -111,6 +110,34 @@ namespace GUI_Website
             txt_SoLuong.Clear();
             txt_GiaNhap.Clear();
             dtpc_NgayNhap.Value = DateTime.Now; 
+        }
+
+        private void dgv_DanhSachNhapHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn quay lại trang Quản lý?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+                this.Close();
+
+                QuanLy formQuanLy = new QuanLy();
+                formQuanLy.Show();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 

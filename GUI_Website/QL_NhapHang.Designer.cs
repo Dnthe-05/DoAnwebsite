@@ -32,6 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QL_NhapHang));
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_DanhSachNhapHang = new System.Windows.Forms.DataGridView();
+            this.col_MaHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_GiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_GiaNhap = new System.Windows.Forms.TextBox();
             this.txt_SoLuong = new System.Windows.Forms.TextBox();
@@ -47,17 +53,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_Xoa = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.col_MaHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_GiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachNhapHang)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -77,6 +77,7 @@
             // 
             // dgv_DanhSachNhapHang
             // 
+            this.dgv_DanhSachNhapHang.AllowUserToOrderColumns = true;
             this.dgv_DanhSachNhapHang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -90,12 +91,56 @@
             this.col_NgayNhap,
             this.col_GiaNhap});
             this.dgv_DanhSachNhapHang.Location = new System.Drawing.Point(12, 85);
+            this.dgv_DanhSachNhapHang.MultiSelect = false;
             this.dgv_DanhSachNhapHang.Name = "dgv_DanhSachNhapHang";
             this.dgv_DanhSachNhapHang.RowHeadersWidth = 51;
             this.dgv_DanhSachNhapHang.RowTemplate.Height = 24;
             this.dgv_DanhSachNhapHang.Size = new System.Drawing.Size(854, 466);
             this.dgv_DanhSachNhapHang.TabIndex = 1;
             this.dgv_DanhSachNhapHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DanhSachNhapHang_CellClick);
+            this.dgv_DanhSachNhapHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DanhSachNhapHang_CellContentClick);
+            // 
+            // col_MaHang
+            // 
+            this.col_MaHang.DataPropertyName = "MANH";
+            this.col_MaHang.HeaderText = "Mã Hàng";
+            this.col_MaHang.MinimumWidth = 6;
+            this.col_MaHang.Name = "col_MaHang";
+            // 
+            // col_MaNCC
+            // 
+            this.col_MaNCC.DataPropertyName = "MANCC";
+            this.col_MaNCC.HeaderText = "Mã NCC";
+            this.col_MaNCC.MinimumWidth = 6;
+            this.col_MaNCC.Name = "col_MaNCC";
+            // 
+            // col_MaSP
+            // 
+            this.col_MaSP.DataPropertyName = "MASP";
+            this.col_MaSP.HeaderText = "Mã SP";
+            this.col_MaSP.MinimumWidth = 6;
+            this.col_MaSP.Name = "col_MaSP";
+            // 
+            // col_SoLuong
+            // 
+            this.col_SoLuong.DataPropertyName = "SOLUONGNHAP";
+            this.col_SoLuong.HeaderText = "Số lượng";
+            this.col_SoLuong.MinimumWidth = 6;
+            this.col_SoLuong.Name = "col_SoLuong";
+            // 
+            // col_NgayNhap
+            // 
+            this.col_NgayNhap.DataPropertyName = "NGAYNHAP";
+            this.col_NgayNhap.HeaderText = "Ngày nhập";
+            this.col_NgayNhap.MinimumWidth = 6;
+            this.col_NgayNhap.Name = "col_NgayNhap";
+            // 
+            // col_GiaNhap
+            // 
+            this.col_GiaNhap.DataPropertyName = "GIANHAP";
+            this.col_GiaNhap.HeaderText = "Giá nhập";
+            this.col_GiaNhap.MinimumWidth = 6;
+            this.col_GiaNhap.Name = "col_GiaNhap";
             // 
             // groupBox1
             // 
@@ -252,6 +297,16 @@
             this.btn_Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Xoa.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "add.png");
+            this.imageList1.Images.SetKeyName(1, "delete.png");
+            this.imageList1.Images.SetKeyName(2, "edit.png");
+            this.imageList1.Images.SetKeyName(3, "log-out.png");
+            this.imageList1.Images.SetKeyName(4, "off.png");
+            // 
             // btn_Sua
             // 
             this.btn_Sua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -298,6 +353,7 @@
             this.button4.Text = "Quay lại";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -314,58 +370,7 @@
             this.button5.Text = "Thoát";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // col_MaHang
-            // 
-            this.col_MaHang.DataPropertyName = "MANH";
-            this.col_MaHang.HeaderText = "Mã Hàng";
-            this.col_MaHang.MinimumWidth = 6;
-            this.col_MaHang.Name = "col_MaHang";
-            // 
-            // col_MaNCC
-            // 
-            this.col_MaNCC.DataPropertyName = "MANCC";
-            this.col_MaNCC.HeaderText = "Mã NCC";
-            this.col_MaNCC.MinimumWidth = 6;
-            this.col_MaNCC.Name = "col_MaNCC";
-            // 
-            // col_MaSP
-            // 
-            this.col_MaSP.DataPropertyName = "MASP";
-            this.col_MaSP.HeaderText = "Mã SP";
-            this.col_MaSP.MinimumWidth = 6;
-            this.col_MaSP.Name = "col_MaSP";
-            // 
-            // col_SoLuong
-            // 
-            this.col_SoLuong.DataPropertyName = "SOLUONGNHAP";
-            this.col_SoLuong.HeaderText = "Số lượng";
-            this.col_SoLuong.MinimumWidth = 6;
-            this.col_SoLuong.Name = "col_SoLuong";
-            // 
-            // col_NgayNhap
-            // 
-            this.col_NgayNhap.DataPropertyName = "NGAYNHAP";
-            this.col_NgayNhap.HeaderText = "Ngày nhập";
-            this.col_NgayNhap.MinimumWidth = 6;
-            this.col_NgayNhap.Name = "col_NgayNhap";
-            // 
-            // col_GiaNhap
-            // 
-            this.col_GiaNhap.DataPropertyName = "GIANHAP";
-            this.col_GiaNhap.HeaderText = "Giá nhập";
-            this.col_GiaNhap.MinimumWidth = 6;
-            this.col_GiaNhap.Name = "col_GiaNhap";
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "add.png");
-            this.imageList1.Images.SetKeyName(1, "delete.png");
-            this.imageList1.Images.SetKeyName(2, "edit.png");
-            this.imageList1.Images.SetKeyName(3, "log-out.png");
-            this.imageList1.Images.SetKeyName(4, "off.png");
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // QL_NhapHang
             // 
@@ -383,6 +388,7 @@
             this.DoubleBuffered = true;
             this.Name = "QL_NhapHang";
             this.Text = "QL_KhoHang";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QL_NhapHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachNhapHang)).EndInit();
             this.groupBox1.ResumeLayout(false);

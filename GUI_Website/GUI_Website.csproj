@@ -119,6 +119,12 @@
     <Compile Include="QuanLy_SanPham.Designer.cs">
       <DependentUpon>QuanLy_SanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL_Website\BLL_Website.csproj">
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLy_SanPham.resx">
       <DependentUpon>QuanLy_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

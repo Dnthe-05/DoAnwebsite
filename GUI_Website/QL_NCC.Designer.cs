@@ -49,16 +49,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_ThongTin = new System.Windows.Forms.TextBox();
+            this.cbx_TimKiem = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.btn_Xoa = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
             this.btn_QuayLai = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cbx_TimKiem = new System.Windows.Forms.ComboBox();
-            this.txt_ThongTin = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachNCC)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -264,6 +264,40 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thao tác";
             // 
+            // txt_ThongTin
+            // 
+            this.txt_ThongTin.Location = new System.Drawing.Point(578, 15);
+            this.txt_ThongTin.Name = "txt_ThongTin";
+            this.txt_ThongTin.Size = new System.Drawing.Size(147, 27);
+            this.txt_ThongTin.TabIndex = 6;
+            this.txt_ThongTin.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // cbx_TimKiem
+            // 
+            this.cbx_TimKiem.FormattingEnabled = true;
+            this.cbx_TimKiem.Location = new System.Drawing.Point(223, 15);
+            this.cbx_TimKiem.Name = "cbx_TimKiem";
+            this.cbx_TimKiem.Size = new System.Drawing.Size(145, 27);
+            this.cbx_TimKiem.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(407, 18);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(124, 19);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Nhập thông tin:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(84, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(122, 19);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Tìm kiếm theo:";
+            // 
             // btn_Xoa
             // 
             this.btn_Xoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -279,6 +313,17 @@
             this.btn_Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Xoa.UseVisualStyleBackColor = true;
             this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "add.png");
+            this.imageList1.Images.SetKeyName(1, "delete.png");
+            this.imageList1.Images.SetKeyName(2, "edit.png");
+            this.imageList1.Images.SetKeyName(3, "logout.png");
+            this.imageList1.Images.SetKeyName(4, "off.png");
+            this.imageList1.Images.SetKeyName(5, "log-out.png");
             // 
             // btn_Sua
             // 
@@ -346,51 +391,6 @@
             this.btn_Thoat.UseVisualStyleBackColor = true;
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "add.png");
-            this.imageList1.Images.SetKeyName(1, "delete.png");
-            this.imageList1.Images.SetKeyName(2, "edit.png");
-            this.imageList1.Images.SetKeyName(3, "logout.png");
-            this.imageList1.Images.SetKeyName(4, "off.png");
-            this.imageList1.Images.SetKeyName(5, "log-out.png");
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(84, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(122, 19);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Tìm kiếm theo:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(407, 18);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(124, 19);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Nhập thông tin:";
-            // 
-            // cbx_TimKiem
-            // 
-            this.cbx_TimKiem.FormattingEnabled = true;
-            this.cbx_TimKiem.Location = new System.Drawing.Point(223, 15);
-            this.cbx_TimKiem.Name = "cbx_TimKiem";
-            this.cbx_TimKiem.Size = new System.Drawing.Size(145, 27);
-            this.cbx_TimKiem.TabIndex = 5;
-            // 
-            // txt_ThongTin
-            // 
-            this.txt_ThongTin.Location = new System.Drawing.Point(578, 15);
-            this.txt_ThongTin.Name = "txt_ThongTin";
-            this.txt_ThongTin.Size = new System.Drawing.Size(147, 27);
-            this.txt_ThongTin.TabIndex = 6;
-            this.txt_ThongTin.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // QL_NCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -407,6 +407,7 @@
             this.DoubleBuffered = true;
             this.Name = "QL_NCC";
             this.Text = "QL_NCC";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QL_NCC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachNCC)).EndInit();
             this.groupBox1.ResumeLayout(false);

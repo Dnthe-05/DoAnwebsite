@@ -95,5 +95,12 @@ namespace GUI_Website
             newform.Show();
             this.Hide();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            ThongKe newform = new ThongKe();
+            newform.Show();
+            this.Hide();
+        }
     }
 }
