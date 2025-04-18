@@ -52,9 +52,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_Xoa = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.txt_NhapThongTin = new System.Windows.Forms.TextBox();
+            this.cbx_TimKiem = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.btn_Sua = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btn_Them = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -159,9 +162,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox1.Location = new System.Drawing.Point(872, 84);
+            this.groupBox1.Location = new System.Drawing.Point(872, 85);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(383, 466);
+            this.groupBox1.Size = new System.Drawing.Size(383, 465);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
@@ -271,7 +274,10 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.btn_Xoa);
+            this.groupBox2.Controls.Add(this.txt_NhapThongTin);
+            this.groupBox2.Controls.Add(this.cbx_TimKiem);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.btn_Sua);
             this.groupBox2.Controls.Add(this.btn_Them);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -282,20 +288,56 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thao tác";
             // 
-            // btn_Xoa
+            // txt_NhapThongTin
             // 
-            this.btn_Xoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Xoa.ForeColor = System.Drawing.Color.Red;
-            this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Xoa.ImageIndex = 1;
-            this.btn_Xoa.ImageList = this.imageList1;
-            this.btn_Xoa.Location = new System.Drawing.Point(1120, 36);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(103, 46);
-            this.btn_Xoa.TabIndex = 2;
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.txt_NhapThongTin.Location = new System.Drawing.Point(660, 21);
+            this.txt_NhapThongTin.Name = "txt_NhapThongTin";
+            this.txt_NhapThongTin.Size = new System.Drawing.Size(151, 27);
+            this.txt_NhapThongTin.TabIndex = 6;
+            this.txt_NhapThongTin.TextChanged += new System.EventHandler(this.txt_NhapThongTin_TextChanged);
+            // 
+            // cbx_TimKiem
+            // 
+            this.cbx_TimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_TimKiem.FormattingEnabled = true;
+            this.cbx_TimKiem.Location = new System.Drawing.Point(271, 21);
+            this.cbx_TimKiem.Name = "cbx_TimKiem";
+            this.cbx_TimKiem.Size = new System.Drawing.Size(187, 27);
+            this.cbx_TimKiem.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(515, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 19);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Nhập thông tin: ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(119, 27);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(126, 19);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Tìm kiếm theo: ";
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Sua.ForeColor = System.Drawing.Color.Red;
+            this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Sua.ImageIndex = 2;
+            this.btn_Sua.ImageList = this.imageList1;
+            this.btn_Sua.Location = new System.Drawing.Point(1124, 36);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(103, 46);
+            this.btn_Sua.TabIndex = 1;
+            this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // imageList1
             // 
@@ -307,21 +349,6 @@
             this.imageList1.Images.SetKeyName(3, "log-out.png");
             this.imageList1.Images.SetKeyName(4, "off.png");
             // 
-            // btn_Sua
-            // 
-            this.btn_Sua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Sua.ForeColor = System.Drawing.Color.Red;
-            this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sua.ImageIndex = 2;
-            this.btn_Sua.ImageList = this.imageList1;
-            this.btn_Sua.Location = new System.Drawing.Point(986, 36);
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(103, 46);
-            this.btn_Sua.TabIndex = 1;
-            this.btn_Sua.Text = "Sửa";
-            this.btn_Sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Sua.UseVisualStyleBackColor = true;
-            // 
             // btn_Them
             // 
             this.btn_Them.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -329,7 +356,7 @@
             this.btn_Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Them.ImageIndex = 0;
             this.btn_Them.ImageList = this.imageList1;
-            this.btn_Them.Location = new System.Drawing.Point(854, 36);
+            this.btn_Them.Location = new System.Drawing.Point(992, 36);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(103, 46);
             this.btn_Them.TabIndex = 0;
@@ -394,6 +421,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,7 +445,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button btn_Sua;
         private System.Windows.Forms.Button btn_Them;
         private System.Windows.Forms.Button button4;
@@ -429,5 +456,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn col_NgayNhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_GiaNhap;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.TextBox txt_NhapThongTin;
+        private System.Windows.Forms.ComboBox cbx_TimKiem;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }

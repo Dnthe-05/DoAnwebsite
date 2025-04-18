@@ -25,10 +25,15 @@ namespace GUI_Website
 
             List<QL_NhapHangDTO> danhSachNhapHang = nhapHangBLL.LayDanhSachNhapHang();
             dgv_DanhSachNhapHang.DataSource = danhSachNhapHang;
+            dgv_DanhSachNhapHang.DataSource = danhSachNhapHang;
 
+            cbx_TimKiem.Items.Add("Mã Hàng");
+            cbx_TimKiem.Items.Add("Mã NCC");
+            cbx_TimKiem.Items.Add("Mã SP");
+            cbx_TimKiem.Items.Add("Số lượng");
+
+            cbx_TimKiem.SelectedIndex = 0;
             dgv_DanhSachNhapHang.AutoGenerateColumns = false;
-
-
         }
 
         private void dgv_DanhSachNhapHang_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -139,6 +144,77 @@ namespace GUI_Website
                 Application.Exit();
             }
         }
-    }
+        private void LoadDanhSachNhapHang()
+        {
+            List<QL_NhapHangDTO> danhSachNhapHang = nhapHangBLL.LayDanhSachNhapHang();
+            dgv_DanhSachNhapHang.DataSource = danhSachNhapHang;
+        }
 
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+            QL_NhapHangDTO nhapHang = new QL_NhapHangDTO
+            {
+                MaNH = int.Parse(txt_MaHang.Text),
+                MaNCC = int.Parse(txt_MaNCC.Text),
+                MaSP = int.Parse(txt_MaSP.Text),
+                SOLUONGNHAP = int.Parse(txt_SoLuong.Text),
+                NgayNhap = dtpc_NgayNhap.Value,
+                GiaNhap = int.Parse(txt_GiaNhap.Text)
+            };
+
+            bool result = nhapHangBLL.CapNhatNhapHang(nhapHang);
+
+            if (result)
+            {
+                MessageBox.Show("Cập nhật phiếu nhập thành công!", "Thông báo");
+                LoadDanhSachNhapHang(); 
+                ClearForm();
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật thất bại!. Không được sửa mã tránh gây lỗi nhập hàng", "Lỗi");
+                ClearForm();
+            }
+        }
+
+        private void txt_NhapThongTin_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = txt_NhapThongTin.Text.Trim();
+            string tieuChi = cbx_TimKiem.SelectedItem.ToString();
+
+            List<QL_NhapHangDTO> danhSachGoc = nhapHangBLL.LayDanhSachNhapHang();
+
+            List<QL_NhapHangDTO> ketQuaTim = new List<QL_NhapHangDTO>();
+
+            switch (tieuChi)
+            {
+                case "Mã Hàng":
+                    ketQuaTim = danhSachGoc
+                        .Where(nh => nh.MaNH.ToString().Contains(keyword))
+                        .ToList();
+                    break;
+
+                case "Mã NCC":
+                    ketQuaTim = danhSachGoc
+                        .Where(nh => nh.MaNCC.ToString().Contains(keyword))
+                        .ToList();
+                    break;
+
+                case "Mã SP":
+                    ketQuaTim = danhSachGoc
+                        .Where(nh => nh.MaSP.ToString().Contains(keyword))
+                        .ToList();
+                    break;
+
+                case "Số lượng":
+                    ketQuaTim = danhSachGoc
+                        .Where(nh => nh.SOLUONGNHAP.ToString().Contains(keyword))
+                        .ToList();
+                    break;
+            }
+
+            dgv_DanhSachNhapHang.DataSource = ketQuaTim;
+        }
+    }
 }

@@ -30,7 +30,7 @@ namespace DAL_Website
                     GiaNhap = int.Parse(row["GIANHAP"].ToString())  
                 };
 
-                // Thêm đối tượng DTO vào danh sách
+
                 list.Add(nhapHang);
             }
 
@@ -43,7 +43,7 @@ namespace DAL_Website
                 string query = "INSERT INTO NHAPHANG (MANH, NGAYNHAP, MANCC, MASP, SOLUONGNHAP, GIANHAP) " +
                                "VALUES (@MaNH, @NgayNhap, @MaNCC, @MaSP, @SoLuong, @GiaNhap)";
 
-                // Thực thi câu lệnh SQL
+
                 SqlParameter[] parameters = new SqlParameter[]
                 {
             new SqlParameter("@MaNH", nhapHang.MaNH),
@@ -56,7 +56,7 @@ namespace DAL_Website
 
                 int result = DatabaseHelper.ExecuteNonQuery(query, parameters);
 
-                // Kiểm tra kết quả thực thi câu lệnh SQL
+
                 return result > 0;
             }
             catch (Exception ex)
@@ -64,5 +64,31 @@ namespace DAL_Website
                 throw new Exception("Có lỗi khi thêm nhập hàng vào CSDL: " + ex.Message);
             }
         }
+        public bool CapNhatNhapHang(QL_NhapHangDTO nhapHang)
+        {
+            try
+            {
+                string query = "UPDATE NHAPHANG SET NGAYNHAP = @NgayNhap, MANCC = @MaNCC, MASP = @MaSP, SOLUONGNHAP = @SoLuong, GIANHAP = @GiaNhap " +
+                               "WHERE MANH = @MaNH";
+
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+            new SqlParameter("@NgayNhap", nhapHang.NgayNhap),
+            new SqlParameter("@MaNCC", nhapHang.MaNCC),
+            new SqlParameter("@MaSP", nhapHang.MaSP),
+            new SqlParameter("@SoLuong", nhapHang.SOLUONGNHAP),
+            new SqlParameter("@GiaNhap", nhapHang.GiaNhap),
+            new SqlParameter("@MaNH", nhapHang.MaNH)
+                };
+
+                int result = DatabaseHelper.ExecuteNonQuery(query, parameters);
+                return result > 0;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Có lỗi khi cập nhật nhập hàng: " + ex.Message);
+            }
+        }
+
     }
 }

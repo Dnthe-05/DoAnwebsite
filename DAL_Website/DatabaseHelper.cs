@@ -48,14 +48,6 @@ namespace DAL_Website
                 return dt;
             }
         }
-
-        // Dùng cho câu query KHÔNG có tham số
-        //public static DataTable ExecuteQuery(string query)
-        //{
-        //    return ExecuteQuery(query, null); // Gọi hàm dưới với null parameters
-        //}
-
-        // Dùng cho câu query CÓ tham số
         public static DataTable ExecuteQuery(string query, SqlParameter[] parameters)
         {
             using (SqlConnection conn = GetConnection())

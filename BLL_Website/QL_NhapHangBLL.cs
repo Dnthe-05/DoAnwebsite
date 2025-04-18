@@ -14,7 +14,7 @@ namespace BLL_Website
     {
         QL_NhapHangDAL nhapHangDAL = new QL_NhapHangDAL();
 
-        // Hàm lấy danh sách nhập hàng
+
         public List<QL_NhapHangDTO> LayDanhSachNhapHang()
         {
             return nhapHangDAL.LayDanhSachNhapHang();
@@ -23,5 +23,10 @@ namespace BLL_Website
         {
             return nhapHangDAL.ThemNhapHang(nhapHang);
         }
+        public bool CapNhatNhapHang(QL_NhapHangDTO nhapHang)
+        {
+            return nhapHangDAL.CapNhatNhapHang(nhapHang);
+        }
+
     }
 }

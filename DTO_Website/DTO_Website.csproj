@@ -43,7 +43,9 @@
   <ItemGroup>
     <Compile Include="NhanVienDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_BaoHanhDTO.cs" />
     <Compile Include="QL_HoaDonDTO.cs" />
+    <Compile Include="QL_KhuyenMaiDTO.cs" />
     <Compile Include="QL_NhaCungCapDTO.cs" />
     <Compile Include="QL_NhapHangDTO.cs" />
     <Compile Include="QL_SanPhamDTO.cs" />
