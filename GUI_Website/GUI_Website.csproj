@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang.Designer.cs">
+      <DependentUpon>BanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -137,6 +143,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BanHang.resx">
+      <DependentUpon>BanHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>

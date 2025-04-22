@@ -102,5 +102,12 @@ namespace GUI_Website
             newform.Show();
             this.Hide();
         }
+
+        private void btn_TaoDonHang_Click(object sender, EventArgs e)
+        {
+            BanHang newform = new BanHang();
+            newform .Show();
+            this.Hide();
+        }
     }
 }

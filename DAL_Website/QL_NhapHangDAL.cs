@@ -89,6 +89,18 @@ namespace DAL_Website
                 throw new Exception("Có lỗi khi cập nhật nhập hàng: " + ex.Message);
             }
         }
+        public bool CapNhatSoLuongTonKho(int maSP, int soLuongNhap)
+        {
+            string query = "UPDATE SANPHAM SET SOLUONG = SOLUONG + @SoLuongNhap WHERE MASP = @MaSP";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+        new SqlParameter("@SoLuongNhap", soLuongNhap),
+        new SqlParameter("@MaSP", maSP)
+            };
+
+            return DatabaseHelper.ExecuteNonQuery(query, parameters) > 0;
+        }
+
 
     }
 }

@@ -438,9 +438,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.Location = new System.Drawing.Point(18, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 19);
+            this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 0;
-            this.label2.Text = "MSSV:";
+            this.label2.Text = "Mã NV: ";
             // 
             // groupBox2
             // 

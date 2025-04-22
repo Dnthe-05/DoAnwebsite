@@ -91,8 +91,5 @@ namespace DAL_Website
 
             return DatabaseHelper.ExecuteNonQuery(query, parameters) > 0;
         }
-
-
     }
-
 }

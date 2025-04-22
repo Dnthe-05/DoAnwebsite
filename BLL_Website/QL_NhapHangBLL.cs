@@ -27,6 +27,10 @@ namespace BLL_Website
         {
             return nhapHangDAL.CapNhatNhapHang(nhapHang);
         }
-
+        public bool CapNhatSoLuongTonKho(int maSP, int soLuong)
+        {
+            QL_NhapHangDAL nhapHangDAL = new QL_NhapHangDAL();
+            return nhapHangDAL.CapNhatSoLuongTonKho(maSP, soLuong);
+        }
     }
 }

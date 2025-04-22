@@ -85,19 +85,26 @@ namespace GUI_Website
 
                 if (result)
                 {
-                    MessageBox.Show("Thêm nhập hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    bool capNhatKho = nhapHangBLL.CapNhatSoLuongTonKho(nhapHang.MaSP, nhapHang.SOLUONGNHAP);
 
+                    if (capNhatKho)
+                    {
+                        MessageBox.Show("Thêm nhập hàng và cập nhật kho thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm nhập hàng thành công nhưng cập nhật kho thất bại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
 
                     List<QL_NhapHangDTO> danhSachNhapHang = nhapHangBLL.LayDanhSachNhapHang();
                     dgv_DanhSachNhapHang.DataSource = danhSachNhapHang;
-
-
                     ClearForm();
                 }
                 else
                 {
                     MessageBox.Show("Thêm nhập hàng không thành công. Vui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
             }
             catch (Exception ex)
             {

@@ -49,6 +49,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.btn_TaoDonHang = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -215,6 +216,7 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "log-out.png");
             this.imageList1.Images.SetKeyName(1, "analysis.png");
+            this.imageList1.Images.SetKeyName(2, "pc.png");
             // 
             // btn_Thoat
             // 
@@ -296,6 +298,21 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // btn_TaoDonHang
+            // 
+            this.btn_TaoDonHang.ForeColor = System.Drawing.Color.Red;
+            this.btn_TaoDonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_TaoDonHang.ImageIndex = 2;
+            this.btn_TaoDonHang.ImageList = this.imageList1;
+            this.btn_TaoDonHang.Location = new System.Drawing.Point(12, 3);
+            this.btn_TaoDonHang.Name = "btn_TaoDonHang";
+            this.btn_TaoDonHang.Size = new System.Drawing.Size(151, 51);
+            this.btn_TaoDonHang.TabIndex = 18;
+            this.btn_TaoDonHang.Text = "Tạo đơn hàng";
+            this.btn_TaoDonHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_TaoDonHang.UseVisualStyleBackColor = true;
+            this.btn_TaoDonHang.Click += new System.EventHandler(this.btn_TaoDonHang_Click);
+            // 
             // QuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -303,6 +320,7 @@
             this.BackgroundImage = global::GUI_Website.Properties.Resources.freepik__adjust__64523;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1383, 649);
+            this.Controls.Add(this.btn_TaoDonHang);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.pictureBox8);
@@ -360,5 +378,6 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn_TaoDonHang;
     }
 }

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\gui_website\\ql_khuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\ql_khuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\gui_website\\quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\gui_website\\ql_khuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\ql_khuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\gui_website\\quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|d:\\learning about code\\c#\\doan\\t\u00E2n th\u1EBF gi\u1EDBi\\gui_website\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\gui_website\\ql_hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{94F85537-1219-46BF-A361-573DEC10E788}|GUI_Website\\GUI_Website.csproj|solutionrelative:gui_website\\ql_hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,21 +48,45 @@
         },
         {
           "DockedWidth": 1312,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QL_KhuyenMai.cs",
-              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_KhuyenMai.cs",
-              "RelativeDocumentMoniker": "GUI_Website\\QL_KhuyenMai.cs",
-              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_KhuyenMai.cs",
-              "RelativeToolTip": "GUI_Website\\QL_KhuyenMai.cs",
-              "ViewState": "AQIAAO0AAAAAAAAAAAAuwPQAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "QuanLy.cs [Design]",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy.cs",
+              "RelativeDocumentMoniker": "GUI_Website\\QuanLy.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy.cs [Design]",
+              "RelativeToolTip": "GUI_Website\\QuanLy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T08:06:19.568Z",
+              "WhenOpened": "2025-04-21T02:47:30.326Z",
               "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuanLy.cs",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy.cs",
+              "RelativeDocumentMoniker": "GUI_Website\\QuanLy.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QuanLy.cs",
+              "RelativeToolTip": "GUI_Website\\QuanLy.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAjwG0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T05:59:52.784Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BanHang.cs [Design]",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\BanHang.cs",
+              "RelativeDocumentMoniker": "GUI_Website\\BanHang.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\BanHang.cs [Design]",
+              "RelativeToolTip": "GUI_Website\\BanHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T05:59:48.877Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -66,14 +98,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QL_KhuyenMai.cs [Design]",
-              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_KhuyenMai.cs",
-              "RelativeDocumentMoniker": "GUI_Website\\QL_KhuyenMai.cs",
-              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_KhuyenMai.cs [Design]",
-              "RelativeToolTip": "GUI_Website\\QL_KhuyenMai.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "QL_HoaDon.cs [Design]",
+              "DocumentMoniker": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_HoaDon.cs",
+              "RelativeDocumentMoniker": "GUI_Website\\QL_HoaDon.cs",
+              "ToolTip": "D:\\Learning about Code\\C#\\DoAn\\T\u00E2n Th\u1EBF Gi\u1EDBi\\GUI_Website\\QL_HoaDon.cs [Design]",
+              "RelativeToolTip": "GUI_Website\\QL_HoaDon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:49:48.172Z",
+              "WhenOpened": "2025-04-21T02:33:06.85Z",
               "EditorCaption": " [Design]"
             }
           ]
