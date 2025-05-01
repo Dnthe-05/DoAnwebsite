@@ -42,3 +42,6 @@ D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Websi
 D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QL_KhuyenMai.resources
 D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.QL_NhapHang.resources
 D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.ThongKe.resources
+D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.BanHang.resources
+D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.NhanVien.resources
+D:\Learning about Code\C#\DoAn\Tân Thế Giới\GUI_Website\obj\Debug\GUI_Website.ucBanHang.resources
